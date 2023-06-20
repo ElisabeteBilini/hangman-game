@@ -10,8 +10,13 @@ print(f'Test: {set_word}')
 
 player_chose = input("Write a letter here: ").lower()
 
+board = []
 for letter in set_word:
+    board += "_"
+print(board)
+
+for position_letter in set_word:
+    letter = set_word[position_letter]
     if letter == player_chose:
-        print('Perfect')
-    else:
-        print('Try again')
+        board[position_letter] = letter
+print(board)
