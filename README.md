@@ -3,11 +3,9 @@
 <p>Hangman is a very popular and traditional game that promotes literacy, quick thinking, vocabulary, and writing while having fun.</p>
 <p>The object of the game is to discover the secret word by positioning the letters, and this must occur before the body is complete.</p>
 <p>A dynamic, fast, and fun game that appeals to all generations, creating a special moment among friends or families.</p>
-<br>
 <p>Visit our page by clicking here:
-<a href=""  target="_blank" rel=”noopener” >Hangman</a>
+<a href="https://elisabetebilini.github.io/hangman-game/"  target="_blank" rel=”noopener” >Hangman</a>
 </p>
-<br>
 
 ![Name here](Images/elisabete.png)
 
