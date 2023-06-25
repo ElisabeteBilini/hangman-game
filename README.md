@@ -1,108 +1,231 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>Hangman Game</h1>
 
-Welcome ELISABETE L BILINI,
+<p>Hangman is a very popular and traditional game that promotes literacy, quick thinking, vocabulary, and writing while having fun.</p>
+<p>The object of the game is to discover the secret word by positioning the letters, and this must occur before the body is complete.</p>
+<p>A dynamic, fast, and fun game that appeals to all generations, creating a special moment among friends or families.</p>
+<br>
+<p>Visit our page by clicking here:
+<a href=""  target="_blank" rel=”noopener” >Hangman</a>
+</p>
+<br>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Name here](Images/elisabete.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<h2>User Experience</h2>
+<h3>User stories</h3>
+<ul>
+<li>First Time Visitor Goals</li>
+<ul>
+<li>As a first-time user, I want to easily understand the main goal of the game and how it works.</li>
+</ul>
+<ul>
+<li>That the messages are clear, and the responsiveness works correctly.</li>
+</ul>
+<ul>
+<li>That the content is not visually polluted and does not cause unexpected distractions, with correct spacing for better reading of the text.</li>
+</ul>
+</ul>
+<ul>
+<li>Returning Visitor Goals</li>
+<ul>
+<li>As a returning visitor, I would like to be able to choose a different category of words levels.</li>
+</ul>
+</ul>
+<ul>
+<li>Frequent User Goals</li>
+<ul>
+<li>As a frequent user, I would like to try to guess little phrases.</li>
+</ul>
+</ul>
 
-## Gitpod Reminders
+<h3>Flow Chart</h3>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<br>
+<p>Flow Chart</p>
 
-`python3 -m http.server`
+![Mobile Wireframe](Images/flowchart.jpg)
 
-A blue button should appear to click: _Make Public_,
+<h2>Features</h2>
 
-Another blue button should appear to click: _Open Browser_.
+<h3>Responsiveness</h3>
+<ul>
+<li>Viewports</li>
+<ul>
+<li>Desktop 1600px x 992px</li>
+<li>Laptop 1280px x 802px</li>
+<li>Tablet 768px x 1024px</li>
+<li>Mobile 320px x 480px</li>
+</ul>
+</ul>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<h3>Initial Page</h3>
 
-A blue button should appear to click: _Make Public_,
+<h3>Game Start</h3>
+<ul>
+<li>Simple and visible logo to greet the player and start the game.</li>
+</ul>
 
-Another blue button should appear to click: _Open Browser_.
+![index](photo)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<h3>Letter Capture</h3>
+<ul>
+<li>Captures the letters entered by the player, if the letter is correct it goes to its correct space in the word order, if the letter is wrong the body starts to be inserted into the gallows.</li>
+</ul>
 
-To log into the Heroku toolbelt CLI:
+![index](photo)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<h3>Final Message</h3>
+<ul>
+<li>Final message with a funny sentence for either end (win or lose)</li>
+</ul>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![index](photo)
 
-------
+<h2>Technologies Used</h2>
+<h3>Languages Used</h3>
+<ul>
+ <li>Python</li>
+</ul>
 
-## Release History
+<h3>Frameworks, Libraries & Programs Used</h3>
+<ol>
+</li>
+<li> <a href="https://miro.com/" target="_blank" rel=”noopener”>Miro</a>
+<ul>
+<li>Balsamiq was used to create the Flow Chart to facilitate the logic and construction of the game.</li>
+</ul>
+</li>
+<li> <a href="https://github.com/" target="_blank" rel=”noopener”>GitHub</a>
+<ul>
+<li>GitHub is used to store the projects code after being pushed from Git.</li>
+</ul>
+</li>
+<li> <a href="https://git-scm.com/" target="_blank" rel=”noopener”>Git</a>
+<ul>
+<li>Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.</li>
+</ul>
+</li>
+</ol>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<h2>Testing</h2>
+<ul>
+<li> <a href="" target="_blank" rel=”noopener”>?????</a></li>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![index](adress/photo)
+<br>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+</ul>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<h3>Testing User Stories from User Experience (UX) Section</h3>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<ul>
+<li>As a user, I want to consume content about world history, wars and politics.</li>
+<li>As a user, I want a site that is intuitive and easy to navigate.</li>
+<li>As a user, I want it to challenge me to improve my knowledge.</li>
+</ul>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<h3>Manual Testing</h3>
+<p>The manual test was done on a self-built desktop with an HP Pavilion Gaming Laptop, 16.1", Windows 10 Home, Intel® Core™ i5, 8GB RAM, 1TB HDD, NVIDIA® GeForce® GTX 1650 Ti</p>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+| Feature tested | Expected result                                    | Current results | Approved disapproved |
+| :---           |     :---:                                          |      :---:      |                 ---: |
+| Capturing user's handwriting  |   Collecting handwriting entered by the user                          |   as expected   | To spend             |
+| Captured correct letter    |  Entered letter in the correct space in the word order        |   as expected   | To spend             |
+| Captured wrong letter           |   Part of hangman body inserted with symbols |   as expected   | To spend             |
+| Letter entry allowed until the word is completed or the entire body hangs| Show completed word or whole body hanging   |   as expected   | To spend             |
+| Final message|  Congratulates user, informs you if you won or lost with a funny message|   as expected   | To spend             |
+<br>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<h3>Browser Test</h3>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+| Browser Tested  | Work Status        |
+| ----------------|--------------------|
+| Microsoft Edge  |  Works as expected |
+| Chrome          |  Works as expected |
+| Firefox         |  Works as expected |
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<br>
+<h3>Device Test</h3>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+| Browser Tested              | Work Status        |
+| ----------------------------|--------------------|
+| Huawei Y5                   |  Works as expected |
+| Honor Lit 20                |  Works as expected |
+| Samsung Galaxy A12          |  Works as expected |
+<br>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<h3>Improvements to be Implemented</h3>
+<ul>
+<li>Insert Intermediate and Advanced Levels Sections</li>
+</ul>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<h3>Known Bugs</h3>
+<ul>
+<li>No bugs known</li>
+</ul>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+<h2>Deployment</h2>
+<h3>GitHub</h3>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<p></p>
+<h4></h4>
+<ol>
+<li>In the GitHub body of my page, click the menu button: repository;</li>
+<li>Locate the portfolio01 project and click;</li>
+<li>Click on the button: settings;</li>
+<li>Click on the button: pages;</li>
+<li>Click on the button: visit the site.</li>
 
-------
+</ol>
+<h4>Cloning the GitHub Repository</h4>
+<ol>
+<li>On GitHub.com, navigate to the main page of the repository.</li>
+<li>To clone your repository using the command line using HTTPS, under "Quick setup", click in copying.  To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click in copying.</li>
+<li>Open Git Bash.</li>
+<li>Change the current working directory to the location where you want the cloned directory.</li>
+<li>Type git clone, and then paste the URL you copied earlier.</li>
+<li>Press Enter to create your local clone.</li>
+</ol>
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+<h2>Credits</h2>
+<h3>Code</h3>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+<ul>
+<li> <a href="https://codeinstitute.net/ie/" target="_blank" rel=”noopener”>Code Institute</a>
+<ul>
+<li>README references.</li>
+</ul>
+</li>
+<li> <a href="https://stackoverflow.com/" target="_blank" rel=”noopener”>Stack Overflow</a>
+<ul>
+<li>Code reference.</li>
+</ul>
+</li>
+<li>Readme initial artwork </li> 
+<ul>
+<li>Designed and thought of by the developer of this project.</li>
+</ul>
+</ul>
 
-**How will this affect me?**
+<h3>Content</h3>
+<ul>
+<li>Words thought up at random by the developer of this project.</li>
+</ul>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+<h3>Media</h3>
+<ul>
+<li> <a href="" target="_blank" rel=”noopener”>??????</a>
+<ul>
+<li>Description</li>
+</ul>
+</ul>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+<h2>Acknowledgements</h2>
+<ul>
+<li>I thank the entire Code Institute team for their understanding with all the challenges that occurred along this project. I thank my family for always being my support.</li>
+</ul>
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
