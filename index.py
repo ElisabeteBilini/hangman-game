@@ -13,9 +13,10 @@ board = []
 for letter in set_word:
     board += "_"
 
-while not set_word: 
-    player_chose = input("Write a letter here: ").lower()
+game_over = False
 
+while not game_over: 
+    player_chose = input("Write a letter here: ").lower()
 
     for position_letter in range(len(set_word)):
         letter = set_word[position_letter]
@@ -23,6 +24,7 @@ while not set_word:
             board[position_letter] = letter
     print(board)
 
-if "_" not in board:
-    set_word = True
-    print("You win!")
+    if "_" not in board:
+        set_word = True
+        print("Congratulations, you have survived!")
+        
