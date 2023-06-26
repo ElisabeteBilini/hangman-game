@@ -6,14 +6,16 @@ word_list = [
 ]
 
 set_word = random.choice(word_list)
+# test words
 print(f'Test: {set_word}')
 
-while set_word: 
+board = []
+for letter in set_word:
+    board += "_"
+
+while not set_word: 
     player_chose = input("Write a letter here: ").lower()
 
-    board = []
-    for letter in set_word:
-        board += "_"
 
     for position_letter in range(len(set_word)):
         letter = set_word[position_letter]
