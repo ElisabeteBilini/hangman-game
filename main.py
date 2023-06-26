@@ -1,10 +1,9 @@
 import random
-from art import body_pieces
 
 word_list = [ 
     'elephant', 'guitar', 'computer', 'pizza', 'bicycle', 'diamond', 'rainbow',
     'spider', 'telescope', 'dragon', 'house', 'book', 'bed', 'summer', 'school',
-    'computer', 'park', 'office', 'bodybuilder', 
+    'computer', 'park', 'office', 'bodybuilder' 
 ]
 
 set_word = random.choice(word_list)
@@ -25,11 +24,12 @@ while not game_over:
         letter = set_word[position_letter]
         if letter == player_chose:
             board[position_letter] = letter
-            tries -= 1
-            if tries == 0:
-                game_over = True
-                print("You've lost your head!")
-        
+    if player_chose not in set_word:
+        tries -= 1
+        if tries == 0:
+            game_over = True
+            print("You've lost your head!")
+                    
     if "_" not in board:
-        set_word = True
+        game_over = True
         print("Congratulations, you have survived!")
