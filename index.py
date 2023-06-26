@@ -13,10 +13,9 @@ player_chose = input("Write a letter here: ").lower()
 board = []
 for letter in set_word:
     board += "_"
-print(board)
 
-for position_letter in set_word:
+for position_letter in range(len(set_word)):
     letter = set_word[position_letter]
     if letter == player_chose:
         board[position_letter] = letter
-print(set_word[(set_word.find(player_chose))])
+print(board)
