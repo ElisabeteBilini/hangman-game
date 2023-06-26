@@ -19,4 +19,4 @@ for position_letter in set_word:
     letter = set_word[position_letter]
     if letter == player_chose:
         board[position_letter] = letter
-print(board)
+print(set_word[(set_word.find(player_chose))])
