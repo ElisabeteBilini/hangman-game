@@ -27,6 +27,8 @@ while not game_over:
         letter = select_word[letter_position]
         if letter == letter_player:
             board[letter_position] = letter
+        else:
+            print("#")
 
     print(board)
 
