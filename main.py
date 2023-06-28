@@ -21,6 +21,11 @@ game_over = False
 for letter in range(len(select_word)):
         board += blanks
 
+player_01 = input("Player 1, enter your name: ")
+player_02 = input("Player 1, enter your name: ")
+
+current_player = player_01
+
 while not game_over:
     #request letter to player
     letter_player = input("Type one letter: ").upper()
