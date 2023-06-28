@@ -6,27 +6,33 @@ word_list = [
     'computer', 'park', 'office', 'bodybuilder' 
 ]
 
+chances = 6 # body has 6 pieces
+board = []
+blanks = '_'
+game_over = False
+
 #choosing random word
 select_word = random.choice(word_list).upper()
 print(select_word)
 
-#request letter to player
-letter_player = input("Type one letter: ").upper()
-
-#Checking Letter and spaces
-board = []
-chances = 6
-
 for letter in range(len(select_word)):
-    board += '_'
+        board += blanks
 
-for letter_position in range(len(select_word)):
-    letter = select_word[letter_position]
-    if letter == letter_player:
-        board[letter_position] = letter
+while not game_over:
+    #request letter to player
+    letter_player = input("Type one letter: ").upper()
 
-print(board)
+    #Checking Letter and spaces
+    for letter_position in range(len(select_word)):
+        letter = select_word[letter_position]
+        if letter == letter_player:
+            board[letter_position] = letter
 
+    print(board)
+
+    if blanks not in board:
+        game_over = True
+        print("Congratulation, you survive!")
 
 
 
