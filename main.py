@@ -13,10 +13,9 @@ word_list = [
 select_word = random.choice(word_list).upper()
 print(select_word)
 
-
-chances = 6 # body has 6 pieces
 board = []
 blanks = '_'
+chances = 6 
 game_over = False
 
 for letter in range(len(select_word)):
@@ -33,18 +32,19 @@ while not game_over:
             board[letter_position] = letter
     print(board)
 
-    if letter_player not in select_word:
+    if letter_player not in range(len(select_word)):
         chances -= 1
         if chances == 0:
             game_over = True
             print("Beware, words can also kill! You lose.")
 
+
+
     if blanks not in board:
         game_over = True
-        print(you)
         print("Congratulation, you survive!")
 
-
+    print(body_pieces[chances])
 
 
 
