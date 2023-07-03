@@ -21,19 +21,19 @@ game_over = False
 for letter in range(len(select_word)):
         board += blanks
 
-choice = input("Choose the game mode: 1 Single Player or 2 Two Players. ")
+choice = input("Choose the game mode: 1 Single Player or 2 Two Players. \n")
 
 print("Number of letters in the secret word: ", len(select_word))
 
 if choice == '1':
-    player = input("Player 1, enter your name: ").upper()
+    player = input("Player 1, enter your name: \n").upper()
 
     while not game_over:
         #identifying player
         print('Player :' + ''.join(board))
     
         #request letter to player
-        letter_player = input("Type one letter: ").upper()
+        letter_player = input("Type one letter: \n").upper()
 
         #Checking Letter and spaces
         has_letter = False
@@ -57,8 +57,8 @@ if choice == '1':
             print("Congratulation, you survive!")
         
 else:       
-    player_01 = input("Player 1, enter your name: ").upper()
-    player_02 = input("Player 2, enter your name: ").upper()
+    player_01 = input("Player 1, enter your name: \n").upper()
+    player_02 = input("Player 2, enter your name: \n").upper()
 
     atual_player = player_01
 
@@ -68,7 +68,7 @@ else:
         print(f"{atual_player}'s turn.")
 
         #request letter to player
-        letter_player = input("Type one letter: ").upper()
+        letter_player = input("Type one letter: \n").upper()
 
         #Checking Letter and spaces
         has_letter = False
