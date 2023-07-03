@@ -20,7 +20,7 @@ game_over = False
 
 for letter in range(len(select_word)):
         board += blanks
-
+        
 player_01 = input("Player 1, enter your name: ").upper()
 player_02 = input("Player 2, enter your name: ").upper()
 
@@ -41,20 +41,24 @@ while not game_over:
         if letter == letter_player:
             board[letter_position] = letter
             has_letter = True
-    print(board)
 
-    if letter_player not in range(len(select_word)):
+    if not has_letter:
         chances -= 1
         if chances == 0:
             game_over = True
             print("Beware, words can also kill! You lose.")
-
-
+            print(f'{atual_player} lost the game.')
+            break
 
     if blanks not in board:
         game_over = True
         print("Congratulation, you survive!")
-
+        print(f'{atual_player} won the game.')
+    
+    if atual_player == player_01:
+        atual_player = player_02
+    else:
+        atual_player = player_01
     print(body_pieces[chances])
 
 
